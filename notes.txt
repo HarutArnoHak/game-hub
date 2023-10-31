@@ -1,0 +1,9 @@
+git init
+git add .
+git commit -m 'initial Commit'
+
+
+project uses chakra ui
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+add chakra provider to main.tsx
