@@ -1,13 +1,10 @@
 const getCroppedImageUrl = (url: string) => {
+  if (!url) return ""; //temprorary fix
+  const target = "media/";
+  const index = url.indexOf(target) + target.length;
+  const croppedImageUrl =
+    url.slice(0, index) + "crop/600/400/" + url.slice(index);
 
-    const target = 'media/'
-    const index = url.indexOf(target) + target.length
-    const croppedImageUrl = url.slice(0, index) + 'crop/600/400/' + url.slice(index);
-
-    return croppedImageUrl
-
-
-
-
-}
+  return croppedImageUrl;
+};
 export default getCroppedImageUrl;
