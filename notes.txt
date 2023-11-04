@@ -11,3 +11,7 @@ add chakra provider to main.tsx
 rawgApi
 
 npm i axios
+
+
+npm i -g vercel
+
